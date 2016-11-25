@@ -18,4 +18,3 @@ print "entre numero de formato ==> "
 num = gets.chomp
 
 descargar(num, enlace)
-https://www.youtube.com/watch?v=sD7Z7S-sHYE
