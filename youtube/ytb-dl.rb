@@ -1,4 +1,6 @@
-# En construccion
+#!/usr/bin/ruby
+#=> #<Encoding:UTF-8>
+
 formato = 0
 arreglo = Array.new
 
@@ -32,6 +34,7 @@ end
 def descargar (numero,link)
     system('youtube-dl --format '+numero+' '+link)
 end
+
 #*********** UI ****************
 print 'Script para descarga de Youtube-dl no olvides debes tenerlo instalado para usarlo'
 print "Introdusca URL ===> "
