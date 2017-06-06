@@ -3,12 +3,12 @@
 class Ejemplo2 < Processing::App
   def settings
     size 500, 500
+		smooth 4
   end
 
   def setup
     sketch_title 'Ejemplo2'
     no_cursor
-    smooth 4
   end
 
   def draw
