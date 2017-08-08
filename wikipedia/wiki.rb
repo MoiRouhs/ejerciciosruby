@@ -7,13 +7,15 @@ require 'json'
 require 'yaml'
 load 'rufino.rb'
 
-articulo = "dolor"
+entrada = ARGV
+articulo = entrada[0]
+n_palabras = if entrada[1] != nil then Integer(entrada[1]) else 2 end
 page = Wikipedia.find(articulo)
 
 textobruto = page.text.downcase
 textobruto.limpiar_caracteres
 textobruto = textobruto.split(' ')
-textobruto = textobruto.ngramas 3
+textobruto = textobruto.ngramas n_palabras
 
 
 
